@@ -1,0 +1,177 @@
+﻿
+@{
+    ViewBag.Title = "Apply Credit Cards, Instant Loans, Loan Against Securities";
+    ViewBag.description = "Apply online credit cards, instant loans, consumer finance, EMI protection, loan against securities, and many more. Call:033-68260999 at Rdq Finserv";
+    ViewBag.keyword = "apply online credit cards, instant loans, personal loans, loan against securities, emi protection, no 1 fintech company in kolkata, no 1 fintech company in east india, best fintech company in india";
+    ViewBag.url = "https://rdqfinserv.com/products";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*Product Page font and css file *@
+<link href="https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap" rel="stylesheet">
+<style>
+    .pro1 {
+        padding: 30px 0;
+    }
+
+    .pro2 {
+        padding: 30px 0 35px 0;
+    }
+
+    .pro3 {
+        border-radius: 8%;
+    }
+
+    .pro4 {
+        width: 100px;
+        height: 100px
+    }
+</style>
+
+@* Header Section start *@
+<section class="bg-light pro1">
+    <div class="">
+        <div class="col-md-12">
+            <h1 class="text-center" style="line-height: 1.3;">
+                We are committed to offer  <br />
+                <span class="productheader">  easy and accessible </span>
+                <br />Finance to everyone
+            </h1>
+        </div>
+    </div>
+</section>
+
+
+@* Product List start *@
+<section class="section bg-light pro2">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 wow fadeIn" data-wow-delay=".3s">
+                <div class="card-group">
+                    @* Personal Loan  start *@
+                    <div class="card border productcardboxbox h-50 mycard pro3">
+                        <a href="@Url.Action("personalloan","Home")">
+                            <img class="card-img-top rounded mx-auto d-block imagesize" src="~/Assets/images/products/investing-lessons.jpg" alt="investing-lessons">
+                            <div class="card-body">
+                                <h5 class="card-title text-center cardtitletext">Personal Loan</h5>
+                            </div>
+                        </a>
+                    </div>
+                    @* Personal Loan  End *@
+
+
+                    @* Loan Against Securities  start *@
+                    <div class="card border productcardboxbox h-50 mycard pro3">
+                        <a href="@Url.Action("las","Home")">
+                            <img class="card-img-top rounded mx-auto d-block imagesize pro4" src="~/Assets/images/products/loan-against-securities.jpg" alt="loan-against-securities">
+                            <div class="card-body">
+                                <h5 class="card-title text-center cardtitletext">Loan Against Securities</h5>
+                            </div>
+                        </a>
+                    </div>
+                    @* Loan Against Securities  End *@
+
+                    @* Credit Card  start *@
+                    <div class="card border productcardboxbox h-50 mycard pro3">
+                        <a href="@Url.Action("creditcard","Home")">
+                            <img class="card-img-top rounded mx-auto d-block imagesize" src="~/Assets/images/products/credit-card.jpg" alt="credit-card">
+                            <div class="card-body">
+                                <h5 class="card-title text-center cardtitletext">Credit Card</h5>
+                            </div>
+                        </a>
+                    </div>
+
+                    @* Credit Card  End *@
+
+
+                    @* EMI Protection start *@
+                    <div class="card border productcardboxbox h-50 mycard pro3">
+                        <a href="@Url.Action("emiprotection","Home")">
+                            <div class=" " style="padding:0 10px">
+                                <img class="card-img-top rounded mx-auto d-block imagesize" src="~/Assets/images/products/emi-protection.jpg" alt="emi-protection">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center cardtitletext">EMI Protection</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    @* EMI Protection end *@
+
+                    @* Consumer Durables start *@
+                    <div class="card border productcardboxbox h-50 mycard pro3">
+                        <a href="@Url.Action("consumerdurable","Home")">
+                            <img class="card-img-top rounded mx-auto d-block imagesize" src="~/Assets/images/products/consumer-durables.jpg" alt="consumer-durables">
+                            <div class="card-body">
+                                <h5 class="card-title text-center cardtitletext">Consumer Durables</h5>
+                            </div>
+                        </a>
+                    </div>
+                    @* Consumer Durables end *@
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@* Product List start *@
+@* Header Section start *@
+
+@*  Finserv and Service Differentiation Section start*@
+
+<section class="section" style="padding:5rem 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-5 wow fadeInDown" data-wow-delay=".3s">
+                <h1 class="text-center wait"> <span class="why"> Why, </span>    choose <br /> RDQ Finserv and Service Differentiation</h1>
+                <p class="text-center tagline"> </p>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5 border-right mb-5  wow fadeIn" data-wow-delay="1s">
+                <div class="featured-box style-1 border-end">
+                    <div class="featured-box-icon text-primary">
+                        <img src="~/Assets/images/products/stock-recommendations.jpg" class="w-100" />
+
+                    </div>
+                    <h2 class="superheroheading" style="font-weight: 100;">When you take loan from Bank / NBFC</h2>
+                    <p>
+                        <ul>
+                            <li class="superherobullet"> Availibity of Loan Centre or Branch nearby to your home</li>
+                            <li class="superherobullet"> You need to visit to Branch and stand in a que</li>
+                            <li class="superherobullet"> Manually fill the application form</li>
+                            <li class="superherobullet"> Submit KYC and Income documents</li>
+                            <li class="superherobullet"> Physical verification of KYC, Address and other documents</li>
+                            <li class="superherobullet"> You need to provide Gurantor, References</li>
+                            <li class="superherobullet"> Manually Sign the agreement and related documents</li>
+                            <li class="superherobullet"> Take long time to get sanction and disbursement of loan</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6  wow fadeIn" data-wow-delay="500ms">
+                <div class="featured-box style-1">
+                    <div class="featured-box-icon text-primary">
+                        <img src="~/Assets/images/products/superhero-investing.jpg" class="w-100" />
+                    </div>
+                    <h2 class="superheroheading">Loan Offered by RDQ Finserv</h2>
+                    <p>
+                        <ul>
+                            <li class="superherobullet"> Get Finance through our digital platform </li>
+                            <li class="superherobullet"> Simple Application Form</li>
+                            <li class="superherobullet"> Ease of KYC & other verification through Online</li>
+                            <li class="superherobullet"> Simple and minimal documentation</li>
+                            <li class="superherobullet"> ZERO paper work</li>
+                            <li class="superherobullet"> Instant sanction of loan</li>
+                            <li class="superherobullet"> Faster disbursement to your bank account</li>
+                            <li class="superherobullet"> Ease of repayment by EMI or online payment gateway</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@*  Finserv and Service Differentiation Section End*@
+

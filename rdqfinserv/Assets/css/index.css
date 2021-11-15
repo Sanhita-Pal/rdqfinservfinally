@@ -1,0 +1,335 @@
+﻿
+@media only screen and (max-width: 768px) {
+    .top-left
+
+{
+    position: absolute !important;
+    top: 86% !important;
+    left: 8% !important;
+}
+
+.top-right {
+    position: absolute !important;
+    top: 86% !important;
+    left: 68% !important;
+}
+
+.bottom-left {
+    position: absolute !important;
+    top: 99% !important;
+    left: 5% !important;
+}
+
+.bottom-right {
+    position: absolute !important;
+    top: 99% !important;
+    left: 68% !important;
+}
+
+a.btn.getfinance-mobile {
+    display: block !important;
+    border-radius: 62px !important;
+}
+
+a.btn.getfinance {
+    display: none;
+}
+
+.advantage-of-loan-texts {
+    color: #183e9d;
+    font-size: 16px !important;
+    line-height: 24px;
+}
+
+.col-md-4 {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    width: 100% !important;
+    padding-bottom: 20px;
+}
+
+.col-md-8 {
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    width: 100% !important;
+}
+
+.keyfeaturesvalue {
+    font-size: 25px !important;
+    padding-top: 10px;
+}
+
+.personalloanheader {
+    color: #606060;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.keyfeatures {
+    padding: 8px;
+    background-color: #183e9d;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+section.calculate-your-loan-amount {
+    padding-top: 40px !important
+}
+
+.range {
+    width: 100%;
+    height: 15px;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.loanamount {
+    background-color: #183e9d;
+    height: 330px;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+.services {
+    padding-top: 10px;
+    position: relative;
+}
+
+    .services .section-heading {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+.imgov {
+    display: none;
+}
+
+.imgov-mobile {
+    display: block !important;
+}
+
+
+.s1 {
+    color: #000;
+    font-size: 15px !important
+}
+
+.s2 {
+    color: #000;
+    font-size: 15px !important;
+    margin-right: 0px !important
+}
+
+.s3 {
+    margin-left: 0px !important;
+    color: #000;
+    font-size: 13px !important;
+}
+
+.s4 {
+    color: #0046bb;
+    font-size: 18px !important;
+    text-align: center;
+}
+
+.glogo {
+    margin-left: 3px !important;
+}
+
+.rangec {
+    width: 76% !important;
+}
+
+.slogan2 {
+    font-size: 16px !important;
+}
+
+.cx2 {
+    margin-left: 40% !important;
+    margin-top: 6% !important;
+}
+
+.startdreaming {
+    font-size: 42px !important;
+}
+
+.helloindia {
+    font-size: 32px !important
+}
+
+.sudom {
+    margin-left: 60px !important;
+}
+.sudo {
+        margin-left: 3% !important;
+        width:100%;
+       
+    }
+
+    .div1-mob {
+        height: 310px !important;
+        width: 310px !important;
+        object-fit: fill !important;
+        /*border:1px solid red;*/
+       /* padding-left:30px !important;*/
+       margin-left:20px;
+    }
+    .featureskey {
+         padding-top: 0px!important; 
+    }
+}
+
+/*-------------------------Mobile View Finish--------------------------------*/
+
+
+.az {
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+}
+
+
+
+
+.sudo {
+    height: 70px;
+    background-image: url('../../Assets/images/index/gpdownloannow.jpg');
+    background-repeat: no-repeat;
+    margin-left: 135px;
+}
+
+    .sudo:hover {
+        background-image: url('../../Assets/images/index/gpcomingsoon.jpg');
+        background-repeat: no-repeat;
+        
+    }
+
+.rangec {
+    width: 86%;
+}
+
+.s1 {
+    color: #000;
+    font-size: 18px
+}
+
+.s2 {
+    color: #000;
+    font-size: 18px;
+    margin-right: -204px;
+}
+
+.s3 {
+    margin-left: 248px;
+    color: #000;
+    font-size: 14px;
+}
+
+.imgov-mobile {
+    display: none;
+}
+
+.top-left {
+    position: absolute;
+    top: 29%;
+    left: 58%;
+}
+
+.top-right {
+    position: absolute;
+    top: 34%;
+    left: 83%;
+}
+
+.bottom-left {
+    position: absolute;
+    top: 58%;
+    left: 56%;
+}
+
+.bottom-right {
+    position: absolute;
+    top: 60%;
+    left: 85%;
+}
+
+a.btn.getfinance-mobile {
+    display: none;
+}
+
+
+/*advantage*/
+.text-center personalloanheader {
+    font-size: 32px;
+}
+
+/*calculate your loan amount seaction -start*/
+
+section.calculate-your-loan-amount {
+    padding-top: 80px;
+}
+
+.emi-calculator {
+    padding-top: 30px;
+}
+
+
+
+.advantage-of-loan-texts {
+    color: #183e9d;
+}
+
+#text {
+    display: inline-block;
+    border-right: 1px solid #0046bb;
+}
+
+#slog {
+    text-align: center;
+    font-size: 26px;
+    line-height: 34px;
+}
+
+.i1 {
+    background: #ff0000;
+    width: 65%;
+    width: 100%
+}
+
+.i2 {
+    font-family: Arial;
+}
+
+.i3 {
+    list-style: none;
+    color: white;
+    font-weight: 600
+}
+
+.i4 {
+    color: #0046bb;
+    font-weight: bold;
+}
+
+.i5 {
+    padding: 5px;
+    height: 82px;
+}
+
+.i6 {
+    text-align: center;
+    color: #0046bb
+}
+
+.i7 {
+    color: #0046bb;
+    font-size: 15px
+}
+
+

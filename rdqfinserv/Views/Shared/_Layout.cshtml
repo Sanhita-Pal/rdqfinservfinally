@@ -1,0 +1,516 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-------------------------Google Search Console Code Start--------------------------->
+    <meta name="google-site-verification" content="RnS8d6bdMpNNBwTCDrSUsM3jNOfIwc6PTIK4OjibuZo" />
+    <!-------------------------Google Search Console Code Finish------------------------>
+    <!-- Global site tag (gtag.js) - Google Analytics Start -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2XPJBE0HZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-G2XPJBE0HZ');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics Finish -->
+
+
+
+    <title>@ViewBag.Title | RDQ Finserv</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow">
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="@ViewBag.description" />
+    <meta name="keywords" content="@ViewBag.keyword" />
+    <link rel="canonical" href="@ViewBag.url" />
+    <meta http-equiv="content-language" content="en-us" />
+    <!-- Required meta tags finish -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="~/Assets/images/layout/RDQ Finserv_title.png" />
+    <!--Font Awosme CDN used for Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Common Css extenal File-->
+    <link href="~/Assets/css/common/animated.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="~/Assets/css/common/layout.css" rel="stylesheet" />
+    <link href="~/Assets/css/common/owl.css" rel="stylesheet" />
+    <link href="~/Assets/css/common/StyleSheet1.css" rel="stylesheet" />
+    <link href="~/Assets/css/common/theme.css" rel="stylesheet" />
+    <link href="~/Assets/css/common/vivify.min.css" rel="stylesheet" />
+    <link href="~/Assets/css/common/footer.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<style>
+    ul.social-icons.wow.fadeInUp.animated {
+        margin-top: -40px;
+    }
+    ul.social-icons li:first-child a {
+        background:white;
+    }
+    a.twitter {
+        background: white;
+    }
+    a.linkedin {
+        background: white;
+    }
+    a.insta {
+        background: white;
+    }
+</style>
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <img src="~/Assets/images/layout/rdq-finserv-loader.gif" />
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+    <!-- Layout header -->
+    <header class="site-header">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg padding-nav static-nav">
+            <div class="container">
+                <a href="@Url.Action("Index","Home")" class="rdqlogo"><img src="~/Assets/images/layout/rdq-finserv-logo.png" alt="rdq-finserv-logo" class="rdqlogodim" /></a>
+                <div class="collapse navbar-collapse" style="margin-left:675px">
+                    <ul class="navbar-nav ml-auto mr-auto">
+
+                        <li class="nav-item dropdown static"><a class="nav-link" href="@Url.Action("Aboutus","Home")"> About Us </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="@Url.Action("products","Home")">Products</a>  </li>
+                        <li class="nav-item"> <a class="nav-link" href="@Url.Action("Support","Home")">Support</a> </li>
+                        <li class="nav-item "> <a class="nav-link" href="@Url.Action("SignUp","Home")"> Sign Up </a> </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--side menu open button-->
+            <a href="javascript:void(0)" class="d-inline-block sidemenu_btn" id="sidemenu_toggle" style="margin-right:0;">
+                <span class="gradient-bg1"></span><span class="gradient-bg1"></span> <span class="gradient-bg1"></span>
+            </a>
+        </nav>
+        <!-- Navbar End -->
+        <!-- side menu -->
+        <div class="side-menu gradient-bg overflow-auto sidenav">
+            <div class="overlay"></div>
+            <div style="padding: 20px 1.3rem; background-color:#fff">
+                <span class="btn-close" style="box-shadow:none" id="btn_sideNavClose"><i style="color:#fff"></i><i style="color:#fff"></i></span>
+                <nav class="side-nav mt-5 w-100">
+                    <div class="row mt-3 show-on-mobile" style="margin-right:0">
+                        <!-- single Menu Item -->
+                        <div class="col-sm-6 mb-3 text-primary" style="width:50%;">
+                            <div class="featured-box style-1  mycard l1">
+                                <a href="@Url.Action("Aboutus","Home")">
+                                    <div class="featured-box-icon text-primary">
+                                        <i class="fa fa-dashboard l2"></i>
+                                    </div>
+                                    <span class="l3 lut1 "> ABOUT US</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- single Menu Item -->
+                        <div class="col-sm-6 mb-3 text-primary" style="width:50%;">
+                            <div class="featured-box style-1 mycard l1">
+                                <a href="@Url.Action("products","Home")">
+                                    <div class="featured-box-icon text-primary">
+                                        <i class="fa fa-paper-plane l2"></i>
+                                    </div>
+                                    <span class="l3 lut1 "> PRODUCTS</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- single Menu Item -->
+
+                        <div class="col-sm-6 text-primary" style="width:50%;">
+                            <div class="featured-box style-1 mycard l1">
+                                <a href="@Url.Action("Support","Home")">
+                                    <div class="featured-box-icon text-primary">
+                                        <i class="fa fa-mail-reply-all l2"></i>
+                                    </div>
+                                    <span class="l3 lut1"> SUPPORT</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- single Menu Item -->
+                        <div class="col-sm-6 text-primary" style="width:50%;">
+                            <div class="featured-box style-1 mycard l1">
+                                <a href="@Url.Action("SignUp","Home")">
+                                    <div class="featured-box-icon text-primary">
+                                        <i class="fa fa-sign-in l2"></i>
+                                    </div>
+                                    <span class="l3 lut1"> SIGNUP</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </nav>
+
+                <!-- Social Menu With Icon Start-->
+                <div class="side-footer w-100 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="row">
+                        <div class="col-sm-6 mb-3 l4">
+                            <a href="">
+                                <i class="fa fa-gift l6" aria-hidden="true"></i><br />
+                                <span class="l7"> CURRENT OFFERS</span>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 mb-3 l5">
+                            <a href="@Url.Action("las","Home")">
+                                <i class="fa fa-play l6" aria-hidden="true"></i><br />
+                                <span class="l7">DOWNLOAD APP</span>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 mb-3 l4">
+                            <a href="">
+                                <i class="fa fa-user l6" aria-hidden="true"></i><br />
+                                <span class="l7"> MY ACCOUNT</span>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 mb-3 l5">
+                            <a href="">
+                                <i class="fa fa-tachometer l6" aria-hidden="true"></i><br />
+                                <span class="l7"> CHECK CIBIL SCORE </span>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 mb-3 l4">
+                            <a href="">
+                                <i class="fa fa-users l6" aria-hidden="true"></i><br />
+                                <span class="l7"> Partners programe </span>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 mb-3 l5">
+                            <a href="">
+                                <i class="fa fa-calculator l6" aria-hidden="true"></i><br />
+                                <span class="l7"> Calculator </span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Social Menu With Icon End-->
+
+                <hr class="l8" />
+                <!-- Social Media Start-->
+                <div class="side-footer w-100 mt-5 mb-5">
+                    <ul class="social-icons wow fadeInUp" data-wow-delay="300ms">
+                        <li ><a href="https://www.facebook.com/RDQ-Finserv-110096081435207/" class="facebook" target="_blank" style="background:white"><i class="fa fa-facebook-f"></i> </a> </li>
+                        <li><a href="https://twitter.com/rdqfinserv" class="twitter" target="_blank"><i class="fa fa-twitter"></i> </a> </li>
+                        <li><a href="https://www.linkedin.com/company/rdqfinserv/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i> </a> </li>
+                        <li><a href="https://www.instagram.com/rdqfinserv/" class="insta" target="_blank"><i class="fa fa-instagram"></i> </a> </li>
+                    </ul>
+                </div>
+                <!-- Social Media End -->
+            </div>
+        </div>
+        <div id="close_side_menu" class="tooltip"></div>
+        <!-- End side menu -->
+    </header>
+    <!-- header End-->
+
+
+
+
+    @RenderBody()
+
+
+
+
+
+
+    <!-- Stay Connected Start -->
+    <section id="join-us" class="bglight position-relative mb-3 sigh" style="background: #fff;position: relative!important;">
+        <div class="container" style="max-width:1150px">
+            <div class="contactus-wrapp l9">
+                <h1 class="l10"> </h1>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="heading-title wow fadeInUp text-center text-md-left" data-wow-duration="0.3s">
+                            <h3 class="darkcolor bottom20" style="color: #384141;margin-bottom: 20px;text-align:left">Stay in Touch</h3>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                        <form class="getin_form wow fadeInUp" data-wow-duration="0.3s" method="post" action="/STAY_IN_TOUCH/SUBSCRIBE">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12" id="result"></div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-group" style="    margin-bottom: 1rem;">
+                                        <label for="userName" class="d-none"></label>
+                                        <input class="form-control fs12" type="text" placeholder="Name" required id="userName" name="name" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="form-group" style="    margin-bottom: 1rem;">
+                                        <label for="email" class="d-none"></label>
+                                        <input class="form-control fs12" type="email" placeholder="Email" required id="email" name="mail" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group" style="margin-bottom: 1rem;">
+                                        <label for="companyName" class="d-none"></label>
+                                        <input class="form-control fs12" max="10" type="tel" placeholder="Mobile No" required id="mobileno" name="mobile" autocomplete="off" title="Please Enter Valid Mobile Number" pattern="[6-9]{1}[0-9]{9}">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-2 col-sm-6">
+                                    <div class="form-group" style="margin-bottom: 1rem;">
+                                        <label for="companyName" class="d-none"></label>
+                                        <select class="form-select fs12" name="querytype" aria-label="Default select example">
+                                            <option value="" disabled selected>Select Your Wish</option>
+                                            <option value="Personal Loan">Personal Loan</option>
+                                            <option value="LAS">LAS</option>
+                                            <option value="Credit Card">Credit Card</option>
+                                            <option value="EMI Protection">EMI Protection</option>
+                                            <option value="Consumer Durables">Consumer Durables</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 col-sm-6">
+                                    <button type="submit" class="btn btn-primary hover-ripple w-100 l11">
+                                        Get a Call Back
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Stay Connected ends -->
+    <!--Site Footer Here-->
+    <footer class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-custom-color-2 u-footer u-footer abt3 abt6 " id="sec-181b">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <a href="" class="u-image u-logo u-image-1" data-image-width="3688" data-image-height="427">
+                <img src="~/Assets/images/layout/rdq-finserv-white-logo.png" class="u-logo-image u-logo-image-1">
+            </a>
+            <p class="u-align-center u-text u-text-1 abt2">
+                <span class="l21 abt5" >Company</span>
+            </p>
+            <p class="u-align-center u-text u-text-2 abt1 abt4" style="color: white;"> Products &amp; More</p>
+            <p class="u-align-center u-text u-text-3" style="color: white;">
+                <b>Important Links </b>
+            </p><span class="u-icon u-icon-circle u-icon-1">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-99b1"></use></svg><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-99b1" style="enable-background:new 0 0 512 512;">
+                    <g>
+                        <g>
+                            <path d="M302.933,42.667h-51.2c-7.074,0-12.8,5.726-12.8,12.8s5.726,12.8,12.8,12.8h51.2c7.074,0,12.8-5.726,12.8-12.8    S310.007,42.667,302.933,42.667z"></path>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <path d="M358.4,0H153.6c-28.228,0-51.2,22.972-51.2,51.2v409.6c0,28.228,22.972,51.2,51.2,51.2h204.8    c28.228,0,51.2-22.972,51.2-51.2V51.2C409.6,22.972,386.628,0,358.4,0z M384,460.8c0,14.14-11.46,25.6-25.6,25.6H153.6    c-14.14,0-25.6-11.46-25.6-25.6V51.2c0-14.14,11.46-25.6,25.6-25.6h204.8c14.14,0,25.6,11.46,25.6,25.6V460.8z"></path>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <circle cx="256" cy="443.733" r="25.6"></circle>
+                        </g>
+                    </g>
+                    <g>
+                        <g>
+                            <circle cx="209.067" cy="55.467" r="12.8"></circle>
+                        </g>
+                    </g>
+                </svg>
+            </span>
+            <p class="u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-4" style="color:white"> 033 6826 0999</p>
+            <p class="u-text u-text-default u-text-5" style="color:white"> support@rdqfinserv.com</p>
+            <ul class="u-align-left-md u-align-left-sm u-align-left-xs u-custom-list u-text u-text-default-lg u-text-default-md u-text-default-xl u-text-6">
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="@Url.Action("Aboutus","Home")" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1"> About Us</a>
+                </li>
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="https://www.iimjobs.com/r/152295-RDQ-GROUP" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-2">Careers</a>
+                </li>
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="#" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-3">Media</a>
+                </li>
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="#" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-4">Blogs</a>
+                </li>
+            </ul>
+            <ul class="u-align-left-md u-align-left-sm u-align-left-xs u-custom-list u-text u-text-default-lg u-text-default-md u-text-default-xl u-text-7">
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="/Home/personalloan" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-5"> Personal Loan</a>
+                </li>
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="/Home/las" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">
+                        LAS<br>
+                    </a>
+                </li>
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="/Home/creditcard" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-6">
+                        Credit Card<br>
+                    </a>
+                </li>
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="/Home/emiprotection" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-8">EMI Protection</a>
+                </li>
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="/Home/consumerdurable" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-9">Consumer Durables</a>
+                </li>
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="/Home/#loan_calculator" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-10">EMI Calculator</a>
+                </li>
+            </ul>
+            <ul class="u-align-left-md u-align-left-sm u-align-left-xs u-custom-list u-text u-text-default-lg u-text-default-md u-text-default-sm u-text-default-xl u-text-8">
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="/home/Support" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-custom-color-5 u-btn-11"> Contact Us</a>
+                </li>
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="/Home/SignUp" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-12">Sign Up&nbsp;</a>
+                </li>
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="/Home/Privacy_Policy" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-13">Privacy Policies&nbsp;</a>
+                </li>
+                <li>
+                    <div class="u-list-icon">
+                        <div xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content">➢</div>
+                    </div>
+                    <a href="/Home/Terms_and_condition" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-white u-btn-13">Terms & Conditions</a>
+                </li>
+            </ul>
+            <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
+
+                <div class="side-footer w-100 mt-5 mb-5" >
+                    <ul class="social-icons wow fadeInUp" data-wow-delay="300ms" style="margin-top:-42px!important;">
+                        <li><a href="https://www.facebook.com/RDQ-Finserv-110096081435207/" class="facebook" target="_blank"><i class="fa fa-facebook-f"></i> </a> </li>
+                        <li><a href="https://twitter.com/rdqfinserv" class="twitter" target="_blank"><i class="fa fa-twitter"></i> </a> </li>
+                        <li><a href="https://www.linkedin.com/company/rdqfinserv/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i> </a> </li>
+                        <li><a href="https://www.instagram.com/rdqfinserv/" class="insta" target="_blank"><i class="fa fa-instagram"></i> </a> </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+            <p class="u-align-center u-text u-text-9" style="color:white">
+                Made with  &nbsp;<span class="u-icon u-icon-6"><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><path style="fill:#FF3636;" d="M376.951,28.507h-0.899c-66.027,0-102.942,48.32-120.049,81.033  c-17.408-32.714-54.022-81.033-120.049-81.033h-1.199C63.324,29.108,3.792,90.032,0.191,167.164  c-4.503,94.538,70.937,158.164,183.782,254.204c19.509,16.807,40.218,34.515,62.126,53.423l9.905,8.703l9.905-8.703  c21.608-18.908,42.617-36.616,62.126-53.423c112.844-96.04,188.278-159.666,183.775-254.204  C508.206,90.031,448.381,29.107,376.951,28.507z"></path><path style="fill:#F40000;" d="M511.808,167.164c4.503,94.538-70.93,158.164-183.775,254.204  c-19.509,16.807-40.518,34.515-62.126,53.423l-9.905,8.703V109.54c17.107-32.714,54.022-81.033,120.049-81.033h0.899  C448.381,29.107,508.206,90.031,511.808,167.164z"></path></svg><img></span>&nbsp;of millions of Indian
+            </p>
+
+        </div>
+    </footer>
+    <!--copyright-->
+    <div class="copyright" style="background-color: #052d4b; color: #fff;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center wow fadeIn animated" data-wow-delay="300ms">
+                    <p class="m-0 py-3">Copyright © <span id="year1"></span> <a href="https://www.tradingswala.com/" target="_blank">RDQ Technologies Pvt Ltd</a>. All Rights Reserved.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="~/Assets/js/common/animation.js"></script>
+    <script src="~/Assets/js/common/jquery.min.js"></script>
+    <script src="~/Assets/js/common/bootstrap.bundle.min.js"></script>
+    <script src="~/Assets/js/common/custom.js"></script>
+    <script src="~/Assets/js/common/imagesloaded.js"></script>
+    <script src="~/Assets/js/common/owl-carousel.js"></script>
+    <script src="~/Assets/js/common/p5.min.js"></script>
+    <script src="~/Assets/js/common/signUp.js"></script>
+    <script src="~/Assets/js/common/three.min.js"></script>
+    <script src="~/Assets/js/common/vanta.waves.min.js"></script>
+    <script src="~/Assets/js/common/theme.js"></script>
+    <script src="~/Assets/js/signUp.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.1/js/mdb.min.js"></script>
+    <script>
+
+
+        VANTA.WAVES({
+            el: "#sp",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x57
+        })
+
+        VANTA.WAVES({
+            el: "#spmob",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x57
+        });
+        //$(document).on({
+        //    "contextmenu": function (e) {
+        //        console.log("ctx menu button:", e.which);
+
+        //        // Stop the context menu
+        //        e.preventDefault();
+        //    },
+        //    "mousedown": function (e) {
+        //        console.log("normal mouse down:", e.which);
+        //    },
+        //    "mouseup": function (e) {
+        //        console.log("normal mouse up:", e.which);
+        //    }
+        //});
+    </script>
+</body>
+</html>

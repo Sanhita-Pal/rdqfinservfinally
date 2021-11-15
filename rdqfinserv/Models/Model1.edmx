@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="RDQFinservModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Admin_User">
+          <Key>
+            <PropertyRef Name="USERID" />
+          </Key>
+          <Property Name="SLNO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="USERNAME" Type="varchar" MaxLength="100" />
+          <Property Name="PASSWORD" Type="varchar" MaxLength="10" />
+          <Property Name="ROLE" Type="varchar" MaxLength="10" />
+          <Property Name="USERID" Type="varchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sign_up">
+          <Key>
+            <PropertyRef Name="uid" />
+          </Key>
+          <Property Name="uid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="fname" Type="varchar" MaxLength="50" />
+          <Property Name="lname" Type="varchar" MaxLength="50" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="phone" Type="varchar" MaxLength="12" />
+          <Property Name="pin" Type="int" />
+        </EntityType>
+        <EntityType Name="STAY_IN_TOUCH">
+          <Key>
+            <PropertyRef Name="SLNO" />
+          </Key>
+          <Property Name="SLNO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DATETIME" Type="datetime" />
+          <Property Name="NAME" Type="varchar" MaxLength="100" />
+          <Property Name="MOBILE" Type="varchar" MaxLength="10" />
+          <Property Name="EMAIL" Type="varchar" MaxLength="100" />
+          <Property Name="QUERY_TYPE" Type="varchar" MaxLength="100" />
+          <Property Name="IP_ADDRESS" Type="varchar" MaxLength="50" />
+          <Property Name="VISITORINFO" Type="varchar(max)" />
+          <Property Name="COUNTRY" Type="varchar(max)" />
+          <Property Name="COUNTRY_CODE" Type="varchar" MaxLength="100" />
+          <Property Name="REGION" Type="varchar" MaxLength="50" />
+          <Property Name="REGION_NAME" Type="varchar" MaxLength="100" />
+          <Property Name="CITY" Type="varchar" MaxLength="100" />
+          <Property Name="ZIP" Type="varchar" MaxLength="10" />
+          <Property Name="LAP" Type="varchar" MaxLength="100" />
+          <Property Name="ORG" Type="varchar" MaxLength="100" />
+          <Property Name="LATITUDE" Type="varchar" MaxLength="50" />
+          <Property Name="LONGITUTDE" Type="varchar" MaxLength="50" />
+          <Property Name="STATUS" Type="varchar(max)" />
+        </EntityType>
+        <EntityType Name="VISITOR_LOG">
+          <Key>
+            <PropertyRef Name="SLNO" />
+          </Key>
+          <Property Name="SLNO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DATETIME" Type="datetime" />
+          <Property Name="IP_ADDRESS" Type="varchar" MaxLength="50" />
+          <Property Name="VISITORINFO" Type="varchar(max)" />
+          <Property Name="COUNTRY" Type="varchar(max)" />
+          <Property Name="REGION" Type="varchar" MaxLength="50" />
+          <Property Name="REGION_NAME" Type="varchar" MaxLength="100" />
+          <Property Name="CITY" Type="varchar" MaxLength="100" />
+          <Property Name="ZIP" Type="varchar" MaxLength="10" />
+          <Property Name="ISP" Type="varchar" MaxLength="100" />
+          <Property Name="ORG" Type="varchar" MaxLength="100" />
+          <Property Name="LATITUDE" Type="varchar" MaxLength="50" />
+          <Property Name="LONGITUTDE" Type="varchar" MaxLength="50" />
+          <Property Name="ACTION" Type="varchar(max)" />
+        </EntityType>
+        <EntityContainer Name="RDQFinservModelStoreContainer">
+          <EntitySet Name="Admin_User" EntityType="Self.Admin_User" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sign_up" EntityType="Self.sign_up" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="STAY_IN_TOUCH" EntityType="Self.STAY_IN_TOUCH" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VISITOR_LOG" EntityType="Self.VISITOR_LOG" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RDQFinservModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Admin_User">
+          <Key>
+            <PropertyRef Name="USERID" />
+          </Key>
+          <Property Name="SLNO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="USERNAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="PASSWORD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ROLE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="USERID" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sign_up">
+          <Key>
+            <PropertyRef Name="uid" />
+          </Key>
+          <Property Name="uid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="phone" Type="String" MaxLength="12" FixedLength="false" Unicode="false" />
+          <Property Name="pin" Type="Int32" />
+        </EntityType>
+        <EntityType Name="STAY_IN_TOUCH">
+          <Key>
+            <PropertyRef Name="SLNO" />
+          </Key>
+          <Property Name="SLNO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DATETIME" Type="DateTime" Precision="3" />
+          <Property Name="NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="MOBILE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="EMAIL" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="QUERY_TYPE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="IP_ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VISITORINFO" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="COUNTRY" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="COUNTRY_CODE" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="REGION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="REGION_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CITY" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ZIP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="LAP" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ORG" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="LATITUDE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LONGITUTDE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="STATUS" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="VISITOR_LOG">
+          <Key>
+            <PropertyRef Name="SLNO" />
+          </Key>
+          <Property Name="SLNO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DATETIME" Type="DateTime" Precision="3" />
+          <Property Name="IP_ADDRESS" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="VISITORINFO" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="COUNTRY" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="REGION" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="REGION_NAME" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="CITY" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ZIP" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="ISP" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="ORG" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="LATITUDE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LONGITUTDE" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ACTION" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="RDQFinservEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Admin_User" EntityType="Self.Admin_User" />
+          <EntitySet Name="sign_up" EntityType="Self.sign_up" />
+          <EntitySet Name="STAY_IN_TOUCH" EntityType="Self.STAY_IN_TOUCH" />
+          <EntitySet Name="VISITOR_LOG" EntityType="Self.VISITOR_LOG" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RDQFinservModelStoreContainer" CdmEntityContainer="RDQFinservEntities">
+          <EntitySetMapping Name="Admin_User">
+            <EntityTypeMapping TypeName="RDQFinservModel.Admin_User">
+              <MappingFragment StoreEntitySet="Admin_User">
+                <ScalarProperty Name="SLNO" ColumnName="SLNO" />
+                <ScalarProperty Name="USERNAME" ColumnName="USERNAME" />
+                <ScalarProperty Name="PASSWORD" ColumnName="PASSWORD" />
+                <ScalarProperty Name="ROLE" ColumnName="ROLE" />
+                <ScalarProperty Name="USERID" ColumnName="USERID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sign_up">
+            <EntityTypeMapping TypeName="RDQFinservModel.sign_up">
+              <MappingFragment StoreEntitySet="sign_up">
+                <ScalarProperty Name="uid" ColumnName="uid" />
+                <ScalarProperty Name="fname" ColumnName="fname" />
+                <ScalarProperty Name="lname" ColumnName="lname" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="pin" ColumnName="pin" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="STAY_IN_TOUCH">
+            <EntityTypeMapping TypeName="RDQFinservModel.STAY_IN_TOUCH">
+              <MappingFragment StoreEntitySet="STAY_IN_TOUCH">
+                <ScalarProperty Name="SLNO" ColumnName="SLNO" />
+                <ScalarProperty Name="DATETIME" ColumnName="DATETIME" />
+                <ScalarProperty Name="NAME" ColumnName="NAME" />
+                <ScalarProperty Name="MOBILE" ColumnName="MOBILE" />
+                <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+                <ScalarProperty Name="QUERY_TYPE" ColumnName="QUERY_TYPE" />
+                <ScalarProperty Name="IP_ADDRESS" ColumnName="IP_ADDRESS" />
+                <ScalarProperty Name="VISITORINFO" ColumnName="VISITORINFO" />
+                <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+                <ScalarProperty Name="COUNTRY_CODE" ColumnName="COUNTRY_CODE" />
+                <ScalarProperty Name="REGION" ColumnName="REGION" />
+                <ScalarProperty Name="REGION_NAME" ColumnName="REGION_NAME" />
+                <ScalarProperty Name="CITY" ColumnName="CITY" />
+                <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+                <ScalarProperty Name="LAP" ColumnName="LAP" />
+                <ScalarProperty Name="ORG" ColumnName="ORG" />
+                <ScalarProperty Name="LATITUDE" ColumnName="LATITUDE" />
+                <ScalarProperty Name="LONGITUTDE" ColumnName="LONGITUTDE" />
+                <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VISITOR_LOG">
+            <EntityTypeMapping TypeName="RDQFinservModel.VISITOR_LOG">
+              <MappingFragment StoreEntitySet="VISITOR_LOG">
+                <ScalarProperty Name="SLNO" ColumnName="SLNO" />
+                <ScalarProperty Name="DATETIME" ColumnName="DATETIME" />
+                <ScalarProperty Name="IP_ADDRESS" ColumnName="IP_ADDRESS" />
+                <ScalarProperty Name="VISITORINFO" ColumnName="VISITORINFO" />
+                <ScalarProperty Name="COUNTRY" ColumnName="COUNTRY" />
+                <ScalarProperty Name="REGION" ColumnName="REGION" />
+                <ScalarProperty Name="REGION_NAME" ColumnName="REGION_NAME" />
+                <ScalarProperty Name="CITY" ColumnName="CITY" />
+                <ScalarProperty Name="ZIP" ColumnName="ZIP" />
+                <ScalarProperty Name="ISP" ColumnName="ISP" />
+                <ScalarProperty Name="ORG" ColumnName="ORG" />
+                <ScalarProperty Name="LATITUDE" ColumnName="LATITUDE" />
+                <ScalarProperty Name="LONGITUTDE" ColumnName="LONGITUTDE" />
+                <ScalarProperty Name="ACTION" ColumnName="ACTION" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

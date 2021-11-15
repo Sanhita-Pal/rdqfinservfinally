@@ -1,0 +1,139 @@
+﻿.main-container {
+    padding: 30px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 108px;
+    margin-top: -43px;
+}
+
+.card {
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    min-height: 200px;
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    height: 296px;
+}
+
+    .card:hover {
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+        transform: scale(1.01);
+    }
+
+.card__exit,
+.card__icon {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.card__exit {
+    grid-row: 1/2;
+    justify-self: end;
+}
+
+.card__icon {
+    grid-row: 2/3;
+    font-size: 20px;
+}
+
+.card__title {
+    grid-row: 3/4;
+    font-weight: 200;
+    color: #ffffff;
+    margin-top: 27px;
+    /*margin-left: 25px;*/
+    text-align: justify;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+k {
+    margin-left: 13px;
+}
+/* CARD BACKGROUNDS */
+
+.card-1 {
+    background: radial-gradient(#410fb6, #7baeca);
+}
+
+.card-2 {
+    background: radial-gradient(#d11033, #ecc6d0);
+}
+
+.card-4 {
+    background: radial-gradient(#0ad68f, #58d5c9);
+}
+
+.card-5 {
+    background: radial-gradient(#f588d8, #c0a3e5);
+}
+
+.sp5 {
+    margin-left: 23px;
+}
+
+.sp6 {
+    margin-left: 23px;
+}
+
+@media screen and (max-width: 763px) {
+    .raiseaticketimage {
+        width: 161px !important;
+        height: 255px !important;
+        margin-left: -45%;
+    }
+
+    .card11 {
+        height: 261px;
+    }
+
+    .card12 {
+        height: 356px;
+    }
+
+    .card13 {
+        height: 314px;
+    }
+
+    .card14 {
+        margin-top: 46px !important;
+    }
+
+    .card16 {
+        height: 517px !important;
+    }
+
+    .card17 {
+        margin-top: 73px !important;
+    }
+
+    .color1 {
+        background: radial-gradient(#0ad68f, #58d5c9) !important;
+    }
+
+    .color2 {
+        background: radial-gradient(#d11033, #ecc6d0) !important;
+    }
+
+    .k1 {
+        font-size: 15px !important;
+        text-align: justify;
+    }
+
+    .cards {
+        margin-left: -6px;
+    }
+
+    .card__title11 {
+        margin-left: -1px;
+        text-align: justify;
+        font-size: 12px;
+    }
+}

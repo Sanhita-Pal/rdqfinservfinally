@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "Sign Up- Apply Credit Cards, Personal Loans, EMI Protection";
+    ViewBag.description = "Sign Up at Rdq Finserv no 1 fintech company in Kolkata & India, for credit cards, personal loans, EMI protection, consumer finance. Call:033-68260999";
+    ViewBag.keyword = "Apply credit cards online, instant loans, online personal loans apply, EMI Protection, consumer durables, no 1 fintech company in kolkata, no 1 fintech company in east india, best fintech company in india";
+    ViewBag.url = "https://rdqfinserv.com/sign-up";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!--Sign Up Page Css-->
+<link href="~/Assets/css/common/sign_up/md.css" rel="stylesheet" />
+<link href="~/Assets/css/common/sign_up/signup.css" rel="stylesheet" />
+
+<style>
+    .sigh{
+        display:none;
+    }
+</style>
+
+
+<div class="main">
+    <section class="signup">
+        <main>
+            <div class="container" style="margin-top:5%">
+                <div class="row">
+                    <div class="col-md-12">
+                        @*Registration From Start**@
+                        <div class="" id="regpage">
+                            <div class="card-body">
+                                <div class="row" style="padding-top:5%">
+                                    <div class="col-md-5 d-xs-none">
+                                        <img src="~/Assets/images/signup/sign-up.jpg" class="img img-responsive" alt="sign-up" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <h2 style="text-align:center;">Sign Up</h2>
+                                            <hr />
+                                            <br />
+                                            @*Name input **@
+                                            <div class="col-md-12">
+                                                <div class="md-form">
+                                                    <i class="fa fa-user prefix"></i>
+                                                    <input type="text" id="fname" class="form-control validate ">
+                                                    <label for="fname" data-success="">First Name</label>
+                                                    <i class="text-danger" id="mfname"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="md-form">
+                                                    <i class="fa fa-user-circle prefix"></i>
+                                                    <input type="text" id="lname" class="form-control validate">
+                                                    <label for="lname" data-error="" data-success="">Last Name</label>
+                                                    <i class="text-danger" id="mlname"></i>
+                                                </div>
+                                            </div>
+                                            @*Phone input **@
+                                            <div class="col-md-12" id="phonesec">
+                                                <div class="md-form">
+                                                    <i class="fa fa-phone prefix"></i>
+                                                    <input type="number" id="phone" class="form-control validate">
+                                                    <label for="phone" data-error="wrong" data-success=""
+                                                           id="capphone">Enter Phone Number</label>
+                                                    <i class="text-danger" id="mphone"></i>
+                                                </div>
+                                            </div>
+                                            @*phone otp input **@
+                                            <div class="col-md-12" id="phoneotpsec" style="display:none">
+                                                <div class="md-form">
+                                                    <i class="fa fa-key prefix"></i>
+                                                    <input type="number" id="phoneotp" class="form-control validate">
+                                                    <label for="phoneotp" data-error="wrong" data-success="" id=""> Enter Phone Otp</label>
+                                                    <i class="text-danger" id="mphoneotp"></i>
+                                                </div>
+                                            </div>
+                                            @*Email input **@
+                                            <div class="col-md-12" id="emailsec">
+                                                <div class="md-form">
+                                                    <i class="fa fa-envelope prefix"></i>
+                                                    <input type="email" id="email" class="form-control validate">
+                                                    <label for="email" data-error="" data-success="" id="capemail"> Enter Email Address </label>
+                                                    <i class="text-danger" id="memail"></i>
+                                                </div>
+                                            </div>
+
+                                            @*Email Otp input **@
+                                            <div class="col-md-12" id="emailotpsec" style="display:none">
+                                                <div class="md-form">
+                                                    <i class="fa fa-key prefix"></i>
+                                                    <input type="number" id="otpmail" class="form-control validate">
+                                                    <label for="otpmail" data-error="wrong" data-success="" id=""> Enter Email OTP </label>
+                                                    <i class="text-danger" id="motpmail"></i>
+                                                </div>
+                                            </div>
+                                            <input type="text" id="phoneotpval" style="display:none">
+                                            <input type="text" id="mailotpval" style="display:none">
+                                            <div class="text-center darken-grey-text mb-4">
+                                                <button class="btn btn-outline-primary" id="sendbtn">Sign Up</button>
+                                            </div>
+                                            <div class="text-center darken-grey-text mb-4">
+                                                <button class="btn btn-outline-primary " id="regbtn" style="display:none">Confirm to Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        @*Registration From End**@
+
+
+                        @*Registration Success Section Start**@
+                        <div class="card" id="compage" style="display:none">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <img src="~/Assets/images/signup/reg-complete.gif" class="img img-fluid" alt="reg-complete" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @*Registration Success Section End**@
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+</div>
+
